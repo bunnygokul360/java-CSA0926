@@ -1,0 +1,17 @@
+public class FactorCount {
+    public static int countFactors(int num) {
+        int count = 0;
+        for (int i = 1; i <= num; i++) {
+            if (num % i == 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        int number = 6; 
+        int factorCount = countFactors(number);
+        System.out.println("The number of factors for " + number + " is: " + factorCount);
+    }
+}
